@@ -2,18 +2,18 @@
 theme : "night"
 transition: "slide"
 highlightTheme: "monokai"
-logoImg: "../logo.png"
+logoImg: "img/logo.png"
 slideNumber: false
 title: "Flutter Toulouse - 22/10"
 ---
 
-![alt text](../logo.png "Flutter Toulouse")
+![alt text](img/logo.png "Flutter Toulouse")
 
 ---
 
 ## Début de l'aventure !
 
-![alt text](../fun.gif "fun")
+![alt text](img/fun.gif "fun")
 
 &#x2713; Groupe Meetup ( ~= **60 membres** )
 
@@ -25,20 +25,22 @@ title: "Flutter Toulouse - 22/10"
 
 Faire aussi des **workshops** / **codelabs**
 
-![alt text](../workshop.gif)
+![alt text](img/workshop.gif)
+
 
 ---
 
 ## Merci !
 
-![alt text](../kooloc.jpg "Kooloc")
+![alt text](img/santetis.png)
+![alt text](img/kooloc.jpg "Kooloc")
+
 
 ---
 
 ## Agenda 
 
 1. **Episode #1 :** What's up Flutter ? 
-
 
 2. **Flutter is all platform** : 
     
@@ -51,7 +53,7 @@ Faire aussi des **workshops** / **codelabs**
 
 ## What's up Flutter ?  #1
 
-![alt text](../wassup.gif "Wassup")
+![alt text](img/wassup.gif "Wassup")
 
 ---
 
@@ -62,22 +64,98 @@ Faire aussi des **workshops** / **codelabs**
 
 - Born in October 2011 
 
-![alt text](../dart2.5.2_2.gif "Verified Pub" )
+![alt text](img/dart2.5.2_2.gif "Verified Pub" )
 
 ---
 
 ###### What's up Flutter ?  #1
 
+### [dart2native](https://dart.dev/tools/dart2native)
+
+
+AOT compiling Dart programs to native, 
+
+self-contained executables.
+
+
+---
+
+###### What's up Flutter ?  #1
+
+### Spread Operator ...
+
+Without Spread &#8658;
+
+    List<Widget> americanCountries = [
+        Text('USA'),
+        Text('Canada')
+    ];
+
+    List<Widget> europeanCountries = [
+        Text('France'),
+        Text('Italy'),
+        Text('Germany')
+    ];
+
+    List<Widget> asianCountries = [
+        Text('India'),
+        Text('China'),
+    ];
+
+    Row(
+        children: americanCountries
+                   ..addAll(europeanCountries)
+                   ..addAll(asianCountries),
+    )
+
+
+---
+
+###### What's up Flutter ?  #1
+
+### Spread Operator ...
+
+With Spread &#8658;
+
+    Row(
+        children: [
+                ...americanCountries
+                ...europeanCountries
+                ...asianCountries
+                ]         
+    )
+
+
+---
+
+###### What's up Flutter ?  #1
+
+### Use `if` in your Collection
+
+With Spread &#8658;
+
+    List<Widget> countriesToShow = [
+                ...americanCountries
+                ...europeanCountries
+                if(isAsian)
+                    ...asianCountries
+    ]      
+
+---
+
+
+###### What's up Flutter ?  #1
+
 ### Who published the [package](https://pub.dev/) ?
 
-![alt text](../22_10_verified_pub.png "Verified Pub" )
+![alt text](img/22_10_verified_pub.png "Verified Pub" )
 
 ---
 
 ###### What's up Flutter ?  #1
 
 Do miss the [Show](https://www.youtube.com/results?search_query=%23BoringShow) !
-![alt text](../boringshow.jpg "Verified Pub" )
+![alt text](img/boringshow.jpg "Verified Pub" )
 
 ---
 
@@ -89,10 +167,7 @@ Do miss the [Show](https://www.youtube.com/results?search_query=%23BoringShow) !
 
 &#x2713; Test your apps on **real devices**
 
-![alt text](../codemagic.png "Verified Pub" )
-
-Do miss the [Show](https://www.youtube.com/results?search_query=%23BoringShow) !
-![alt text](../boringshow.jpg "Verified Pub" )
+![alt text](img/codemagic.png "Verified Pub" )
 
 ---
 
@@ -100,7 +175,7 @@ Do miss the [Show](https://www.youtube.com/results?search_query=%23BoringShow) !
 
 VsCode is cool with Flutter Extensions
 
-<img src="../vscodeflutter.gif" width="800" height="500"></img>
+<img src="img/vscodeflutter.gif" width="800" height="500"></img>
 
 ---
 
@@ -110,4 +185,4 @@ VsCode is cool with Flutter Extensions
 
 **Sketch mobile app designs** &#8658;  **native UI code**
 
-![alt text](../supernova-mb-final.png "Verified Pub" )
+![alt text](img/supernova-mb-final.png "Verified Pub" )
