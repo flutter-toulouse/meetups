@@ -21,6 +21,16 @@ title: "Flutter Toulouse - 22/10"
 
 ---
 
+## Who Am I ? 
+
+- Boris-Wilfried : @bwnyasse
+
+- Dart Enthusiast / Flutter Technical Trainer 
+
+- Cloud Architect 
+
+---
+
 ## La cible :
 
 Faire aussi des **workshops** / **codelabs**
